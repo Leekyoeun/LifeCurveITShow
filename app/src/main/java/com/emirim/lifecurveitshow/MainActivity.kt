@@ -1,9 +1,10 @@
 package com.emirim.lifecurveitshow
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import kotlinx.android.synthetic.main.activity_login.*
+import androidx.appcompat.app.AppCompatActivity
+import kotlinx.android.synthetic.main.activity_main.*
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -11,9 +12,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        RegisterButton.setOnClickListener{
-            val nextIntent= Intent(this, MainActivity::class.java)
-            startActivity(nextIntent)
+        LifeCurvelogo.setOnClickListener {
+            startActivity(Intent(this, LoginActivity::class.java))
         }
+
     }
 }
