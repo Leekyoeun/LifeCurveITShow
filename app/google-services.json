@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "48611267130",
+    "firebase_url": "https://lifecurveitshow.firebaseio.com",
+    "project_id": "lifecurveitshow",
+    "storage_bucket": "lifecurveitshow.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:48611267130:android:28aab7573c935c04b81b03",
+        "android_client_info": {
+          "package_name": "com.emirim.lifecurveitshow"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "48611267130-horlsf7fbm6t48pipjdd2mtbdn9up1nh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOKfheecw5Tk7TgAMzXrYyS92oKvnajyw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "48611267130-horlsf7fbm6t48pipjdd2mtbdn9up1nh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
