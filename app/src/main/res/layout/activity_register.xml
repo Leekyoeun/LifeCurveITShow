@@ -24,11 +24,12 @@
         android:id="@+id/ID"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="244dp"
-        android:layout_marginEnd="44dp"
-        android:text="ID"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="252dp"
+        android:text="E-mail"
         android:textSize="20sp"
         app:layout_constraintEnd_toStartOf="@+id/InputID"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -36,25 +37,39 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
-        android:layout_marginTop="97dp"
-        android:layout_marginEnd="9dp"
+        android:layout_marginEnd="10dp"
         android:text="Password"
         android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/inputID2"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/InputID" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/PWCheckedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="8dp"
+        android:text="PW Check"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/inputID3"
+        app:layout_constraintEnd_toStartOf="@+id/inputID3"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/InputID"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="57dp"
+        android:layout_marginEnd="8dp"
         android:ems="10"
-        android:hint="아이디를 입력하세요"
+        android:hint="이메일을 입력하세요"
         android:inputType="textPersonName"
         app:layout_constraintBaseline_toBaselineOf="@+id/ID"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ID" />
 
     <EditText
         android:id="@+id/inputID2"
@@ -62,18 +77,32 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="비밀번호를 입력하세요"
-        android:inputType="textPersonName"
+        android:inputType="textPassword"
         app:layout_constraintBaseline_toBaselineOf="@+id/password"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/password" />
+
+    <EditText
+        android:id="@+id/inputID3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="254dp"
+        android:layout_marginBottom="256dp"
+        android:ems="10"
+        android:hint="비밀번호를 입력하세요"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/PWCheckedButton"
+        app:layout_constraintTop_toTopOf="@+id/ID" />
 
     <Button
         android:id="@+id/OKButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="19dp"
-        android:layout_marginTop="91dp"
-        android:text="확인"
-        app:layout_constraintStart_toStartOf="@+id/inputID2"
-        app:layout_constraintTop_toBottomOf="@+id/inputID2" />
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="80dp"
+        android:text="회원가입"
+        app:layout_constraintStart_toStartOf="@+id/inputID3"
+        app:layout_constraintTop_toBottomOf="@+id/inputID3" />
 </androidx.constraintlayout.widget.ConstraintLayout>
