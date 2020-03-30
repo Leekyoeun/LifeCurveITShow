@@ -16,6 +16,7 @@ class LoginActivity : AppCompatActivity()  {
             LoginButton.setOnClickListener {
                 startActivity(Intent(this, ChooseGrapicsActivity::class.java))
                 //DB에서 아이디랑 비밀번호 체크하는 부분
+
             }
         }
     }
