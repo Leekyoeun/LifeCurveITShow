@@ -11,11 +11,14 @@ class ChooseGrapicsActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_choose_grapics)
 
-        choosecategory.setOnClickListener {
+        //카테고리 선택 버튼을 눌렀을 때
+        choosecategoryButton.setOnClickListener(){
             startActivity(Intent(this, ChooseCategory::class.java))
         }
+
+        //직접 그리기 버튼 눌렀을 때
         chooseUserGrapics.setOnClickListener {
-            startActivity(Intent(this, ChooseUserGrapics::class.java))
+            startActivity(Intent(this, ChooseMyDraw::class.java))
         }
     }
 }
