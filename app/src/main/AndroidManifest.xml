@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.emirim.lifecurveitshow">
-    <!-- 카메라 권한 -->
-    <uses-permission android:name="android.permission.CAMERA" /> <!-- 인터넷 권한 -->
+    <!-- 카메라, 갤러리 권한 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- 인터넷 권한 -->
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -11,13 +13,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".GoogleLoginActivity"></activity>
-        <activity android:name=".ChooseMyDraw" />
-        <activity android:name=".ChooseUserGraphics" />
-        <activity android:name=".ChooseCategory" />
-        <activity android:name=".ChooseGrapicsActivity" />
-        <activity android:name=".RegisterActivity" />
-        <activity android:name=".LoginActivity" />
+        <activity android:name=".PostActivity"></activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,6 +21,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".GoogleLoginActivity" />
+        <activity android:name=".ChooseMyDraw" />
+        <activity android:name=".ChooseUserGraphics" />
+        <activity android:name=".ChooseCategory" />
+        <activity android:name=".ChooseGrapicsActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".LoginActivity" />
     </application>
 
 </manifest>
