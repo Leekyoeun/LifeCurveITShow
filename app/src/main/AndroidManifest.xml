@@ -2,15 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.emirim.lifecurveitshow">
     <!-- 카메라, 갤러리 권한 -->
-    <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <!-- 인터넷 권한 -->
-    <uses-permission android:name="android.permission.INTERNET" />
-
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-
-
 
     <application
         android:allowBackup="true"
@@ -18,20 +11,20 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".PostActivity"></activity>
-        <activity android:name=".MainActivity">
+        <activity android:name="Java.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ChooseMyDraw" />
-        <activity android:name=".ChooseUserGraphics" />
-        <activity android:name=".ChooseCategory" />
-        <activity android:name=".ChooseGrapicsActivity" />
-        <activity android:name=".RegisterActivity" />
-        <activity android:name=".LoginActivity" />
+        <activity android:name=".Kotlin.PostActivity" />
+        <activity android:name=".Kotlin.ChooseMyDraw" />
+        <activity android:name=".Kotlin.ChooseUserGraphics" />
+        <activity android:name=".Kotlin.ChooseCategory" />
+        <activity android:name=".Kotlin.ChooseGrapicsActivity" />
+        <activity android:name=".Kotlin.RegisterActivity" />
+        <activity android:name=".Kotlin.LoginActivity" />
     </application>
 
 </manifest>
