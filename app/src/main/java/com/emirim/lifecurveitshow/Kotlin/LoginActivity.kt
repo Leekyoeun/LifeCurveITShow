@@ -1,9 +1,9 @@
-package com.emirim.lifecurveitshow
+package com.emirim.lifecurveitshow.Kotlin
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.google.firebase.auth.FirebaseAuth
+import com.emirim.lifecurveitshow.R
 import kotlinx.android.synthetic.main.activity_login.*
 
 class LoginActivity : AppCompatActivity()  {

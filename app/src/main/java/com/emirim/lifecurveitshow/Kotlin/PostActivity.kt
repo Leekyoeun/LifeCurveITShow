@@ -1,7 +1,8 @@
-package com.emirim.lifecurveitshow
+package com.emirim.lifecurveitshow.Kotlin
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.emirim.lifecurveitshow.R
 
 class PostActivity : AppCompatActivity() {
 

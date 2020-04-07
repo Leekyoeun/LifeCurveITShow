@@ -1,4 +1,4 @@
-package com.emirim.lifecurveitshow
+package com.emirim.lifecurveitshow.Kotlin
 
 class Post {
     //글의 ID

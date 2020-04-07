@@ -1,4 +1,4 @@
-package com.emirim.lifecurveitshow
+package com.emirim.lifecurveitshow.Kotlin
 
 class Comment {
     //댓글의 ID
