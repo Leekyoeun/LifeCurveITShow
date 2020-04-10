@@ -42,13 +42,13 @@
         android:text="E-mail"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/inputID"
+        app:layout_constraintEnd_toStartOf="@+id/InputEmail"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
     <EditText
-        android:id="@+id/inputID"
+        android:id="@+id/InputEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="95dp"
@@ -69,14 +69,14 @@
         android:text="Password"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/inputPassword"
+        app:layout_constraintEnd_toStartOf="@+id/InputPassword"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ID"
         tools:ignore="MissingConstraints" />
 
     <EditText
-        android:id="@+id/inputPassword"
+        android:id="@+id/InputPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="28dp"
@@ -94,7 +94,7 @@
         android:layout_marginTop="17dp"
         android:text="Login"
         app:layout_constraintStart_toStartOf="@+id/Password"
-        app:layout_constraintTop_toBottomOf="@+id/inputPassword"
+        app:layout_constraintTop_toBottomOf="@+id/InputPassword"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -104,8 +104,8 @@
         android:layout_marginTop="17dp"
         android:layout_marginEnd="10dp"
         android:text="Register"
-        app:layout_constraintEnd_toEndOf="@+id/inputPassword"
-        app:layout_constraintTop_toBottomOf="@+id/inputPassword"
+        app:layout_constraintEnd_toEndOf="@+id/InputPassword"
+        app:layout_constraintTop_toBottomOf="@+id/InputPassword"
         tools:ignore="MissingConstraints" />
 
     <Button
