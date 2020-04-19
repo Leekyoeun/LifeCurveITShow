@@ -6,10 +6,9 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- 인터넷 권한 -->
+    <uses-permission android:name="android.permission.INTERNET" />
 
-    <!--인터넷 권한-->
-    <uses-permission android:name="android.permission.INTERNET"/>
     <application
         android:allowBackup="true"
         android:icon="@drawable/lifecurve_logo"
@@ -23,7 +22,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Kotlin.PostActivity" />
         <activity android:name=".Kotlin.ChooseMyDraw" />
         <activity android:name=".Kotlin.ChooseUserGraphics" />
         <activity android:name=".Kotlin.ChooseCategory" />
