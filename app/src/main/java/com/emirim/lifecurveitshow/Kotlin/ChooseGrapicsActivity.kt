@@ -30,6 +30,7 @@ class ChooseGrapicsActivity : AppCompatActivity() {
         }
         OPEN_GALLERY.setOnClickListener { loadImage() }
     }
+
     //이미지 불러오기
     private fun loadImage() {
         val intent = Intent()
