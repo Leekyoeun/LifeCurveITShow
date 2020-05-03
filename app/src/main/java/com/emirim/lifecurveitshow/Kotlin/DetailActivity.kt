@@ -111,7 +111,7 @@ class DetailActivity : AppCompatActivity() {
         // 하단 댓글쓰기 버튼에 클릭 이벤트 리스너 설정
         floatingActionButton.setOnClickListener {
             // 글쓰기 화면으로 이동할 Intent 생성
-            val intent = Intent(this@DetailActivity, WriteActivity::class.java)
+            val intent = Intent(this@DetailActivity, ChooseMyDraw::class.java)
             // 글쓰기 화면에서 댓글쓰기 인것을 인식할수 있도록 글쓰기 모드를 comment 로 전달
             intent.putExtra("mode", "comment")
             // 글의 ID 를 전달

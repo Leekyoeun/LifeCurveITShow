@@ -9,7 +9,6 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.emirim.lifecurveitshow.R
 import kotlinx.android.synthetic.main.activity_choose_grapics.*
-import kotlinx.android.synthetic.main.activity_choose_my_draw.*
 
 class ChooseGrapicsActivity : AppCompatActivity() {
     val Gallery = 0
@@ -49,7 +48,6 @@ class ChooseGrapicsActivity : AppCompatActivity() {
                 try {
                     var bitmap: Bitmap =
                         MediaStore.Images.Media.getBitmap(this.contentResolver, dataUri)
-                    GraphicImage.setImageBitmap(bitmap)
                 } catch (e: Exception) {
                     Toast.makeText(this, "$e", Toast.LENGTH_SHORT).show()
                 }
