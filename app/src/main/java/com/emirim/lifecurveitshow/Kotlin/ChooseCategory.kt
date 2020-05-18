@@ -12,14 +12,5 @@ class ChooseCategory : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_choose_category)
 
-        Graphic1.setOnClickListener{
-            startActivity(Intent(this, PostActivity::class.java))
-        }
-        Graphic2.setOnClickListener{
-            startActivity(Intent(this, PostActivity::class.java))
-        }
-        Graphic3.setOnClickListener{
-            startActivity(Intent(this, PostActivity::class.java))
-        }
     }
 }

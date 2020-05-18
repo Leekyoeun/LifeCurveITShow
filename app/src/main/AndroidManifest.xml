@@ -15,9 +15,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
-        <activity android:name=".Kotlin.WriteActivity" />
-        <activity android:name=".Kotlin.GraphicPostActivity" />
+        <activity android:name=".Kotlin.Chart.CircleChart"></activity>
         <activity android:name=".Kotlin.DetailActivity" />
         <activity android:name=".Kotlin.MainActivity">
             <intent-filter>
@@ -26,9 +24,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Kotlin.PostActivity" />
-        <activity android:name=".Kotlin.ChooseMyDraw" />
-        <activity android:name=".Kotlin.ChooseUserGraphics" />
         <activity android:name=".Kotlin.ChooseCategory" />
         <activity android:name=".Kotlin.ChooseGrapicsActivity" />
         <activity android:name=".Kotlin.RegisterActivity" />

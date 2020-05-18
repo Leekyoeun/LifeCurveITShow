@@ -16,7 +16,7 @@ import com.emirim.lifecurveitshow.R
 import com.google.firebase.database.*
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.activity_detail.*
-import kotlinx.android.synthetic.main.activity_write.*
+import org.w3c.dom.Comment
 
 class DetailActivity : AppCompatActivity() {
     val commentList = mutableListOf<Comment>()
@@ -26,9 +26,6 @@ class DetailActivity : AppCompatActivity() {
         setContentView(R.layout.activity_detail)
 
 
-        floatingActionButton.setOnClickListener {
-            startActivity(Intent(this, WriteActivity::class.java))
-        }
 
     }
 }

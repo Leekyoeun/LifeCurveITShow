@@ -1,13 +1,13 @@
-package com.emirim.lifecurveitshow.Kotlin
+package com.emirim.lifecurveitshow.Kotlin.Chart
 
-import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
 import com.emirim.lifecurveitshow.R
 
-class GraphicPostActivity : AppCompatActivity() {
+class CircleChart : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_graphic_post)
+        setContentView(R.layout.activity_circle_chart)
     }
 }

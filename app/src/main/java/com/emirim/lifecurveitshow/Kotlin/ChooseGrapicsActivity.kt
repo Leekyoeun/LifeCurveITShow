@@ -23,10 +23,7 @@ class ChooseGrapicsActivity : AppCompatActivity() {
             startActivity(Intent(this, ChooseCategory::class.java))
         }
 
-        //직접 그리기 버튼 눌렀을 때
-        chooseUserGrapics.setOnClickListener {
-            startActivity(Intent(this, PostActivity::class.java))
-        }
+
         OPEN_GALLERY.setOnClickListener { loadImage() }
     }
 
