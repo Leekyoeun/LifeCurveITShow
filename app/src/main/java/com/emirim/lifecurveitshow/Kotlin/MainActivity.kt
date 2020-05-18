@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
 
         setupPermissions()
 
-        LifeCurvelogo.setOnClickListener {
+        LifeCurvelogo.setOnClickListener{
             startActivity(Intent(this, LoginActivity::class.java))
         }
     }
