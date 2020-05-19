@@ -1,4 +1,4 @@
-package com.emirim.lifecurveitshow
+package com.emirim.lifecurveitshow.Kotlin
 
 import android.app.NotificationChannel
 import android.app.NotificationManager
@@ -9,7 +9,6 @@ import android.media.RingtoneManager
 import android.os.Build
 import android.util.Log
 import androidx.core.app.NotificationCompat
-import com.emirim.lifecurveitshow.Kotlin.MainActivity
 import com.google.firebase.messaging.FirebaseMessagingService
 import com.google.firebase.messaging.RemoteMessage
 
