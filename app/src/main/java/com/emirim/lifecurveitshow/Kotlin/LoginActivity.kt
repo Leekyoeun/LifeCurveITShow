@@ -27,6 +27,5 @@ class LoginActivity : AppCompatActivity() {
         LoginButton.setOnClickListener {
             startActivity(Intent(this, ChooseGrapicsActivity::class.java))
         }
-
     }
 }
