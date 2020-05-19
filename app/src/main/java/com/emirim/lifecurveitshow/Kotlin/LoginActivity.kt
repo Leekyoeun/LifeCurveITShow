@@ -42,7 +42,7 @@ class LoginActivity : AppCompatActivity() {
                         Toast.makeText(applicationContext,"인증 실패",Toast.LENGTH_SHORT).show()
                     }
                 })
-                .show();8
+                .show();
         }
     }
 }
