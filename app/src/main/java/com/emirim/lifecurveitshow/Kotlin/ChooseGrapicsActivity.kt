@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.provider.MediaStore
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.emirim.lifecurveitshow.Kotlin.Memo.MainActivity
 import com.emirim.lifecurveitshow.R
 import kotlinx.android.synthetic.main.activity_choose_grapics.*
 
@@ -22,7 +23,9 @@ class ChooseGrapicsActivity : AppCompatActivity() {
         choosecategoryButton.setOnClickListener() {
             startActivity(Intent(this, ChooseCategory::class.java))
         }
-
+        chooseUserGrapics.setOnClickListener {
+            startActivity(Intent(this, MainActivity::class.java))
+        }
 
         OPEN_GALLERY.setOnClickListener { loadImage() }
     }
