@@ -1,4 +1,4 @@
-package com.emirim.lifecurveitshow
+package com.emirim.lifecurveitshow.Kotlin
 
 import android.os.Bundle
 import android.util.Log
