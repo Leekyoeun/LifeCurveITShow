@@ -11,13 +11,13 @@ import com.google.android.gms.auth.api.signin.GoogleSignInAccount
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.android.gms.common.api.ApiException
+import com.google.android.material.snackbar.Snackbar
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.GoogleAuthProvider
 import kotlinx.android.synthetic.main.activity_login.*
 
 class GoogleLoginActivity : AppCompatActivity(), View.OnClickListener {
-
 
     //firebase Auth
     private lateinit var firebaseAuth: FirebaseAuth
@@ -87,6 +87,7 @@ class GoogleLoginActivity : AppCompatActivity(), View.OnClickListener {
                     toMainActivity(firebaseAuth?.currentUser)
                 } else {
                     Log.w("LoginActivity", "firebaseAuthWithGoogle 실패", task.exception)
+                   // Snackbar.make(login_layout, "로그인에 실패하였습니다.", Snackbar.LENGTH_SHORT).show()
                 }
             }
     }// firebaseAuthWithGoogle END
@@ -128,5 +129,6 @@ class GoogleLoginActivity : AppCompatActivity(), View.OnClickListener {
 
         }
     }
+
 
 }

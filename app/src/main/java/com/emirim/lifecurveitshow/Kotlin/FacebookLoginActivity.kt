@@ -29,6 +29,7 @@ class FacebookLoginActivity : AppCompatActivity() {
 
         facebooklogin.setOnClickListener {
             facebookLogin()
+            startActivity(Intent(this, ChooseGrapicsActivity::class.java))
         }
     }
     private fun facebookLogin() {
@@ -97,4 +98,5 @@ class FacebookLoginActivity : AppCompatActivity() {
             detail.text = "photoURL"
         }
     }*/
+
 }

@@ -5,16 +5,26 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.emirim.lifecurveitshow.R
+import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_login.*
+import kotlinx.android.synthetic.main.activity_register.*
 import me.aflak.libraries.FingerprintCallback
 import me.aflak.libraries.FingerprintDialog
 
 
 class LoginActivity : AppCompatActivity() {
 
+    //Google Login result
+    private val RC_SIGN_IN = 9001
+
+    //Firebase Auth
+    private var firebaseAuth: FirebaseAuth? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
+
+        firebaseAuth = FirebaseAuth.getInstance()
 
         facebooklogin.setOnClickListener {
             startActivity(Intent(this, FacebookLoginActivity::class.java))
@@ -27,7 +37,7 @@ class LoginActivity : AppCompatActivity() {
         }
         LoginButton.setOnClickListener {
             startActivity(Intent(this, ChooseGrapicsActivity::class.java))
-            Toast.makeText(applicationContext,"로그인 되었습니다",Toast.LENGTH_SHORT).show()
+            Toast.makeText(applicationContext, "로그인 되었습니다", Toast.LENGTH_SHORT).show()
         }
         button.setOnClickListener {
             FingerprintDialog.initialize(this)
@@ -47,7 +57,7 @@ class LoginActivity : AppCompatActivity() {
         //getHashKey()
     }
 
-   /* private fun getHashKey() {
+    /* private fun getHashKey() {
         var packageInfo: PackageInfo? = null
         try {
             packageInfo =
@@ -66,5 +76,5 @@ class LoginActivity : AppCompatActivity() {
             }
         }
     }*/
-
+    //EmailCreate
 }
