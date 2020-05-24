@@ -1,30 +1,30 @@
-package com.emirim.lifecurveitshow.Kotlin
+package com.emirim.lifecurveitshow.Kotlin.Login
 
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import com.emirim.lifecurveitshow.Kotlin.ChooseCategory
+import com.emirim.lifecurveitshow.Kotlin.ChooseGrapicsActivity
+import com.emirim.lifecurveitshow.Kotlin.FacebookLoginActivity
+import com.emirim.lifecurveitshow.Kotlin.GoogleLoginActivity
 import com.emirim.lifecurveitshow.R
-import com.google.firebase.auth.FirebaseAuth
+import com.facebook.login.Login
 import kotlinx.android.synthetic.main.activity_login.*
 import kotlinx.android.synthetic.main.activity_register.*
 import me.aflak.libraries.FingerprintCallback
 import me.aflak.libraries.FingerprintDialog
+import retrofit2.Callback
+import retrofit2.Retrofit
+import retrofit2.converter.gson.GsonConverterFactory
 
 
 class LoginActivity : AppCompatActivity() {
 
-    //Google Login result
-    private val RC_SIGN_IN = 9001
-
-    //Firebase Auth
-    private var firebaseAuth: FirebaseAuth? = null
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
-
-        firebaseAuth = FirebaseAuth.getInstance()
 
         facebooklogin.setOnClickListener {
             startActivity(Intent(this, FacebookLoginActivity::class.java))
@@ -38,6 +38,8 @@ class LoginActivity : AppCompatActivity() {
         LoginButton.setOnClickListener {
             startActivity(Intent(this, ChooseGrapicsActivity::class.java))
             Toast.makeText(applicationContext, "로그인 되었습니다", Toast.LENGTH_SHORT).show()
+
+
         }
         button.setOnClickListener {
             FingerprintDialog.initialize(this)
@@ -55,6 +57,7 @@ class LoginActivity : AppCompatActivity() {
                 .show()
         }
         //getHashKey()
+
     }
 
     /* private fun getHashKey() {

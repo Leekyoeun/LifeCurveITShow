@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import androidx.appcompat.app.AppCompatActivity
+import com.emirim.lifecurveitshow.Kotlin.Login.LoginActivity
 import com.emirim.lifecurveitshow.R
 
 class SplashActivity : AppCompatActivity() {
