@@ -28,8 +28,6 @@ class LoginActivity : AppCompatActivity() {
                 LoginButton.setOnClickListener {
                     startActivity(Intent(this, ChooseGrapicsActivity::class.java))
                     Toast.makeText(applicationContext, "로그인 되었습니다", Toast.LENGTH_SHORT).show()
-
-
                 }
                 button.setOnClickListener {
                     FingerprintDialog.initialize(this)

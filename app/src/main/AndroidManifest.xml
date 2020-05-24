@@ -14,11 +14,7 @@
         android:theme="@style/AppTheme">
         <activity android:name=".Kotlin.LoginActivity"></activity>
         <activity android:name=".Kotlin.Login.LoginMainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".Kotlin.Register.RegisterActivity" /> <!-- 페이스북 메타데이터 -->
         <meta-data
@@ -26,7 +22,11 @@
             android:value="@string/facebook_app_id" />
 
         <activity android:name=".Kotlin.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity android:name=".Kotlin.Memo.MainActivity" />
         <activity android:name=".Kotlin.MainActivity" />

@@ -48,8 +48,8 @@
         android:layout_marginEnd="9dp"
         android:text="PW Check"
         android:textSize="20sp"
-        app:layout_constraintEnd_toStartOf="@+id/inputID3"
-        app:layout_constraintTop_toTopOf="@+id/inputID3" />
+        app:layout_constraintEnd_toStartOf="@+id/pw_chk"
+        app:layout_constraintTop_toTopOf="@+id/pw_chk" />
 
     <EditText
         android:id="@+id/InputID"
@@ -71,12 +71,12 @@
         android:ems="10"
         android:hint="비밀번호를 입력하세요"
         android:inputType="textPassword"
-        app:layout_constraintEnd_toEndOf="@+id/inputID3"
-        app:layout_constraintStart_toStartOf="@+id/inputID3"
+        app:layout_constraintEnd_toEndOf="@+id/pw_chk"
+        app:layout_constraintStart_toStartOf="@+id/pw_chk"
         app:layout_constraintTop_toBottomOf="@+id/InputID" />
 
     <EditText
-        android:id="@+id/inputID3"
+        android:id="@+id/pw_chk"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
@@ -94,6 +94,6 @@
         android:layout_marginStart="12dp"
         android:layout_marginTop="80dp"
         android:text="회원가입"
-        app:layout_constraintStart_toStartOf="@+id/inputID3"
-        app:layout_constraintTop_toBottomOf="@+id/inputID3" />
+        app:layout_constraintStart_toStartOf="@+id/pw_chk"
+        app:layout_constraintTop_toBottomOf="@+id/pw_chk" />
 </androidx.constraintlayout.widget.ConstraintLayout>
