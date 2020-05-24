@@ -1,30 +1,31 @@
 package com.emirim.lifecurveitshow.Kotlin.Login
 
 import android.content.Intent
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
-import androidx.appcompat.app.AlertDialog
-import androidx.appcompat.app.AppCompatActivity
-import com.emirim.lifecurveitshow.Kotlin.ChooseCategory
-import com.emirim.lifecurveitshow.Kotlin.ChooseGrapicsActivity
 import com.emirim.lifecurveitshow.Kotlin.FacebookLoginActivity
 import com.emirim.lifecurveitshow.Kotlin.GoogleLoginActivity
+import com.emirim.lifecurveitshow.Kotlin.Login.logic.ISignInBL
+import com.emirim.lifecurveitshow.Kotlin.Login.logic.SignInBL
+import com.emirim.lifecurveitshow.Kotlin.Login.model.AuthCredentials
+import com.emirim.lifecurveitshow.Kotlin.Register.RegisterActivity
 import com.emirim.lifecurveitshow.R
-import com.facebook.login.Login
 import kotlinx.android.synthetic.main.activity_login.*
-import kotlinx.android.synthetic.main.activity_register.*
 import me.aflak.libraries.FingerprintCallback
 import me.aflak.libraries.FingerprintDialog
-import retrofit2.Callback
-import retrofit2.Retrofit
-import retrofit2.converter.gson.GsonConverterFactory
+import org.jetbrains.anko.activityUiThread
+import org.jetbrains.anko.doAsync
+import org.jetbrains.anko.setContentView
+import org.jetbrains.anko.toast
 
-
-class LoginActivity : AppCompatActivity() {
-
+class LoginMainActivity : AppCompatActivity() {
+    private val signInBL: ISignInBL = SignInBL()
+    private lateinit var signInUI: SignInUI
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
+        SignInUI().setContentView(this)
 
         facebooklogin.setOnClickListener {
             startActivity(Intent(this, FacebookLoginActivity::class.java))
@@ -36,10 +37,8 @@ class LoginActivity : AppCompatActivity() {
             startActivity(Intent(this, RegisterActivity::class.java))
         }
         LoginButton.setOnClickListener {
-            startActivity(Intent(this, ChooseGrapicsActivity::class.java))
+            startActivity(Intent(this, LoginMainActivity::class.java))
             Toast.makeText(applicationContext, "로그인 되었습니다", Toast.LENGTH_SHORT).show()
-
-
         }
         button.setOnClickListener {
             FingerprintDialog.initialize(this)
@@ -56,28 +55,16 @@ class LoginActivity : AppCompatActivity() {
                 })
                 .show()
         }
-        //getHashKey()
-
     }
-
-    /* private fun getHashKey() {
-        var packageInfo: PackageInfo? = null
-        try {
-            packageInfo =
-                packageManager.getPackageInfo(packageName, PackageManager.GET_SIGNATURES)
-        } catch (e: PackageManager.NameNotFoundException) {
-            e.printStackTrace()
-        }
-        if (packageInfo == null) Log.e("KeyHash", "KeyHash:null")
-        for (signature in packageInfo!!.signatures) {
-            try {
-                val md: MessageDigest = MessageDigest.getInstance("SHA")
-                md.update(signature.toByteArray())
-                Log.d("KeyHash", Base64.encodeToString(md.digest(), Base64.DEFAULT))
-            } catch (e: NoSuchAlgorithmException) {
-                Log.e("KeyHash", "Unable to get MessageDigest. signature=$signature", e)
+    fun authorizeUser(username: String, password: String){
+        doAsync {
+            val authorized=signInBL.checkUserCredentials(
+                AuthCredentials(username=username, password = password)
+            )
+            activityUiThread {
+                if(authorized) toast("Signed!")
+                else signInUI.showAccessDeniedAlertDialog()
             }
         }
-    }*/
-    //EmailCreate
+    }
 }

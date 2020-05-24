@@ -1,4 +1,4 @@
-package com.emirim.lifecurveitshow.Kotlin.Login
+package com.emirim.lifecurveitshow.Kotlin.Register
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -13,14 +13,6 @@ class RegisterActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register)
-
-
-        AuthButton.setOnClickListener {
-            startActivity(Intent(this, ChooseGrapicsActivity::class.java))
-            //여기서 아이디 중복 체크랑 DB에 집어넣는 작업하면 됌
-
-            Toast.makeText(this, "회원가입 되셨습니다", Toast.LENGTH_SHORT).show()
-        }
 
     }
 }
