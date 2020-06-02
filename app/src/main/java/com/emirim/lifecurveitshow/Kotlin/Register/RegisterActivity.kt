@@ -18,6 +18,7 @@ class RegisterActivity : AppCompatActivity() {
         //회원가입 소스 코드 삽입
 
         AuthButton.setOnClickListener {
+
             startActivity(Intent(this, ChooseGrapicsActivity::class.java))
         }
 

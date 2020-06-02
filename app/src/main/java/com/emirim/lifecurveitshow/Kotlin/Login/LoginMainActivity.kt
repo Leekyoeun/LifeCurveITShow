@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import androidx.annotation.RequiresApi
 import com.emirim.lifecurveitshow.Kotlin.ChooseCategory
 import com.emirim.lifecurveitshow.Kotlin.FacebookLoginActivity
 import com.emirim.lifecurveitshow.Kotlin.GoogleLoginActivity
