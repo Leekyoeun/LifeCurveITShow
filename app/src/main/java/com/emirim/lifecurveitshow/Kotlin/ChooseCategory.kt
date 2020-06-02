@@ -3,7 +3,6 @@ package com.emirim.lifecurveitshow.Kotlin
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.emirim.lifecurveitshow.Kotlin.Memo.MainActivity
 import com.emirim.lifecurveitshow.R
 import kotlinx.android.synthetic.main.activity_choose_category.*
 
