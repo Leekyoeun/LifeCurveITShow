@@ -14,9 +14,6 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity
-            android:name=".Kotlin.Login.FingerPrintActivity"
-            tools:ignore="Instantiatable"></activity>
         <activity android:name=".Kotlin.Login.LoginMainActivity" />
         <activity android:name=".Kotlin.Register.RegisterActivity" /> <!-- 페이스북 메타데이터 -->
         <meta-data
