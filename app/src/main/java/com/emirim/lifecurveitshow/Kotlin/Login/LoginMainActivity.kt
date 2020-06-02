@@ -4,11 +4,9 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
-import androidx.annotation.RequiresApi
 import com.emirim.lifecurveitshow.Kotlin.ChooseCategory
 import com.emirim.lifecurveitshow.Kotlin.FacebookLoginActivity
 import com.emirim.lifecurveitshow.Kotlin.GoogleLoginActivity
-import com.emirim.lifecurveitshow.Kotlin.Register.RegisterActivity
 import com.emirim.lifecurveitshow.R
 import kotlinx.android.synthetic.main.activity_login.*
 import me.aflak.libraries.FingerprintCallback
@@ -25,18 +23,14 @@ class LoginMainActivity : AppCompatActivity() {
             googlelogin.setOnClickListener {
                 startActivity(Intent(this, GoogleLoginActivity::class.java))
             }
-            RegisterButton.setOnClickListener {
-                startActivity(Intent(this, RegisterActivity::class.java))
-            }
             button.setOnClickListener {
-
-           FingerprintDialog.initialize(this)
+                startActivity(Intent(this, ChooseCategory::class.java))
+                FingerprintDialog.initialize(this)
                .title("지문인증")
                .message("지문으로 인증합니다")
                 .callback(object: FingerprintCallback{
                    override fun onAuthenticationSuccess() {
                        Toast.makeText(applicationContext,"인증 성공", Toast.LENGTH_SHORT).show()
-                       //startActivity(Intent(this, ChooseCategory::class.java))
                    }
 
                    override fun onAuthenticationCancel() {

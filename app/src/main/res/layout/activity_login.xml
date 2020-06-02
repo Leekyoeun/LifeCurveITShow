@@ -6,64 +6,50 @@
     android:layout_height="match_parent"
     tools:context=".Kotlin.Login.LoginMainActivity">
 
+
     <ImageView
         android:id="@+id/LifeCurvelogo"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="3dp"
-        android:layout_marginBottom="282dp"
-        app:layout_constraintBottom_toTopOf="@+id/RegisterButton"
+        android:layout_marginBottom="2dp"
+        app:layout_constraintBottom_toTopOf="@+id/life"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/lifecurve_logo" />
 
-
     <TextView
         android:id="@+id/life"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="94dp"
-        android:layout_marginTop="153dp"
-        android:layout_marginBottom="529dp"
+        android:layout_marginBottom="207dp"
         android:text="How about your life?"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/googlelogin"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/RegisterButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="58dp"
-        android:text="Register"
-        app:layout_constraintBottom_toTopOf="@+id/facebooklogin"
+        app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/LifeCurvelogo"
         tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/facebooklogin"
-        android:layout_width="391dp"
-        android:layout_height="34dp"
-        android:layout_marginStart="6dp"
-        android:layout_marginEnd="6dp"
-        android:layout_marginBottom="26dp"
+        android:layout_width="395dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="32dp"
         android:background="@drawable/btn_signin_facebook"
         android:text="Facebook login"
         app:layout_constraintBottom_toTopOf="@+id/googlelogin"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/RegisterButton"
+        app:layout_constraintTop_toBottomOf="@+id/button"
         tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/googlelogin"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="392dp"
+        android:layout_height="50dp"
         android:layout_marginStart="2dp"
         android:layout_marginEnd="2dp"
         android:layout_marginBottom="60dp"
@@ -72,18 +58,18 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/life"
+        app:layout_constraintTop_toBottomOf="@+id/facebooklogin"
         tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="1dp"
-        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="180dp"
         android:text="지문인증"
-        app:layout_constraintBaseline_toBaselineOf="@+id/RegisterButton"
-        app:layout_constraintEnd_toStartOf="@+id/RegisterButton"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/facebooklogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/life" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
