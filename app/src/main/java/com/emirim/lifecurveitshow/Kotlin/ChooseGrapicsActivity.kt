@@ -17,8 +17,7 @@ class ChooseGrapicsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_choose_grapics)
-
-
+        
         //카테고리 선택 버튼을 눌렀을 때
         choosecategoryButton.setOnClickListener() {
             startActivity(Intent(this, ChooseCategory::class.java))
