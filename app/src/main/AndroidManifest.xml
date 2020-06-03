@@ -28,7 +28,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Kotlin.Memo.MainActivity" />
         <activity android:name=".Kotlin.MainActivity" />
         <activity android:name=".Kotlin.ChooseGrapicsActivity" />
         <activity android:name=".Kotlin.FacebookLoginActivity" />

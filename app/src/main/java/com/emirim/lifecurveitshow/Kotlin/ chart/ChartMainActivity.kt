@@ -21,7 +21,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.chart_activity_main.*
 
 
-class MainActivity : AppCompatActivity() {
+class ChartMainActivity : AppCompatActivity() {
 
     var controller : LifeEventController? = null
     var backPressedTime : Long = 0
@@ -189,14 +189,12 @@ class MainActivity : AppCompatActivity() {
         var time = System.currentTimeMillis()
         var intervalTime = time - backPressedTime
 
-        if (0 <= intervalTime && 2000 >= intervalTime)
-        {
+        if (0 <= intervalTime && 2000 >= intervalTime) {
             finishAffinity()
             System.runFinalization()
             System.exit(0)
         }
-        else
-        {
+        else {
             backPressedTime = time;
         }
     }
