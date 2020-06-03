@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import com.emirim.lifecurveitshow.Kotlin.ChooseCategory
+import com.emirim.lifecurveitshow.Kotlin.ChooseGrapicsActivity
 import com.emirim.lifecurveitshow.Kotlin.FacebookLoginActivity
 import com.emirim.lifecurveitshow.Kotlin.GoogleLoginActivity
 import com.emirim.lifecurveitshow.R
@@ -24,7 +25,7 @@ class LoginMainActivity : AppCompatActivity() {
                 startActivity(Intent(this, GoogleLoginActivity::class.java))
             }
             button.setOnClickListener {
-                startActivity(Intent(this, ChooseCategory::class.java))
+                startActivity(Intent(this, ChooseGrapicsActivity::class.java))
                 FingerprintDialog.initialize(this)
                .title("지문인증")
                .message("지문으로 인증합니다")
