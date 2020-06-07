@@ -1,4 +1,4 @@
-package com.emirim.lifecurveitshow.Kotlin.chart
+package org.goldenage.com.goldenage
 
 import android.graphics.Color
 import android.view.LayoutInflater
@@ -7,7 +7,6 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.emirim.lifecurveitshow.R
-import org.goldenage.com.goldenage.LifeEventController
 
 class ItemRecyclerViewAdapter(_controller : LifeEventController?) : RecyclerView.Adapter<RecyclerView.ViewHolder>()
 {

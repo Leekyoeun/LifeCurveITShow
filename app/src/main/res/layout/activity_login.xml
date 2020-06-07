@@ -4,19 +4,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Kotlin.Login.LoginMainActivity">
+    tools:context=".Kotlin.Login.LoginMainActivity"
+    android:background="@drawable/background">
 
 
-    <ImageView
+    <TextView
         android:id="@+id/LifeCurvelogo"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:hint="LifeCurve"
+        android:text="LifeCurvelogo"
+        android:textSize="40sp"
+        android:textColor="#808080"
+        android:gravity="center"
         android:layout_marginBottom="2dp"
         app:layout_constraintBottom_toTopOf="@+id/life"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/lifecurve_logo" />
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <TextView
         android:id="@+id/life"
@@ -25,6 +30,7 @@
         android:layout_marginBottom="207dp"
         android:text="How about your life?"
         android:textSize="20sp"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

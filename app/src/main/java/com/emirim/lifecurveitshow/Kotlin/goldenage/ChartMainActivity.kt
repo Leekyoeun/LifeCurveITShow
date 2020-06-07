@@ -11,13 +11,10 @@ import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.emirim.lifecurveitshow.Kotlin.chart.ItemRecyclerViewAdapter
 import com.emirim.lifecurveitshow.R
-
 import com.github.mikephil.charting.components.XAxis
 import com.github.mikephil.charting.data.LineData
 import com.github.mikephil.charting.data.LineDataSet
-import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.chart_activity_main.*
 
 
@@ -29,7 +26,7 @@ class ChartMainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.chart_activity_main)
+        setContentView(R.layout.activity_main)
 
         var sharedPerferences = PreferenceManager.getDefaultSharedPreferences(this)
 
@@ -189,12 +186,14 @@ class ChartMainActivity : AppCompatActivity() {
         var time = System.currentTimeMillis()
         var intervalTime = time - backPressedTime
 
-        if (0 <= intervalTime && 2000 >= intervalTime) {
+        if (0 <= intervalTime && 2000 >= intervalTime)
+        {
             finishAffinity()
             System.runFinalization()
             System.exit(0)
         }
-        else {
+        else
+        {
             backPressedTime = time;
         }
     }

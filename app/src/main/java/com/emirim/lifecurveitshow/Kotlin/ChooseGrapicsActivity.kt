@@ -20,6 +20,6 @@ class ChooseGrapicsActivity : AppCompatActivity() {
         //직접 그리는 것을 선택했을 때
         chooseUserGrapics.setOnClickListener {
             startActivity(Intent(this, ChartMainActivity::class.java))
-        }
+    }
     }
 }
