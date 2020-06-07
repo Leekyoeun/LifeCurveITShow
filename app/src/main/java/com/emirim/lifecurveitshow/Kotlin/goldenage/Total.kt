@@ -1,4 +1,7 @@
 package com.emirim.lifecurveitshow.Kotlin.goldenage
 
-class Total {
+import androidx.appcompat.app.AppCompatActivity
+
+class Total : AppCompatActivity(){
+
 }

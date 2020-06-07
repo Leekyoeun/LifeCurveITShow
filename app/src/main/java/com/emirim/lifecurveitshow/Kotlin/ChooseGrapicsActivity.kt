@@ -2,10 +2,14 @@ package com.emirim.lifecurveitshow.Kotlin
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.emirim.lifecurveitshow.R
 import kotlinx.android.synthetic.main.activity_choose_grapics.*
 import org.goldenage.com.goldenage.ChartMainActivity
+import java.util.*
+
 
 class ChooseGrapicsActivity : AppCompatActivity() {
 
@@ -20,6 +24,6 @@ class ChooseGrapicsActivity : AppCompatActivity() {
         //직접 그리는 것을 선택했을 때
         chooseUserGrapics.setOnClickListener {
             startActivity(Intent(this, ChartMainActivity::class.java))
-    }
+        }
     }
 }

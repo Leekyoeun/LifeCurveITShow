@@ -44,5 +44,4 @@
             android:name="com.facebook.CustomTabActivity"
             android:exported="true" />
     </application>
-
 </manifest>
