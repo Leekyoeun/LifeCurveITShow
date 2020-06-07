@@ -106,4 +106,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
+    <TextView
+        android:layout_width="294dp"
+        android:layout_height="224dp"
+        android:gravity="center"
+        android:hint="Create App by Y.I.D
+        (3112 이교은, 3116 이유빈)"
+        android:textSize="24sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="58dp"
+        tools:layout_editor_absoluteY="362dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

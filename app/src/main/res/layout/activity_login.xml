@@ -12,16 +12,17 @@
         android:id="@+id/LifeCurvelogo"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:layout_marginBottom="2dp"
+        android:gravity="center"
         android:hint="LifeCurve"
         android:text="LifeCurvelogo"
-        android:textSize="40sp"
         android:textColor="#808080"
-        android:gravity="center"
-        android:layout_marginBottom="2dp"
+        android:textSize="40sp"
         app:layout_constraintBottom_toTopOf="@+id/life"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/life"
@@ -77,5 +78,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/life" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
