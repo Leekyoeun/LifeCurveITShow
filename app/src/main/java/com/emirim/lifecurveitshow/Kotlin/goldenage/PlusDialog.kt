@@ -55,7 +55,7 @@ class PlusDialog(_context : Context, _controller : LifeEventController?) : Dialo
 
         if (age < 0 || age > 200)
         {
-            Toast.makeText(context, "나이는 0살 ~ 200살 사이를 입력해주세요",Toast.LENGTH_LONG).show()
+            Toast.makeText(context, "나이는 0살 ~ 100살 사이를 입력해주세요",Toast.LENGTH_LONG).show()
             return
         }
 

@@ -1,10 +1,11 @@
-package com.emirim.lifecurveitshow.Kotlin
+package com.emirim.lifecurveitshow.Kotlin.Login
 
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.emirim.lifecurveitshow.Kotlin.ChooseGrapicsActivity
 import com.emirim.lifecurveitshow.R
 import com.facebook.AccessToken
 import com.facebook.CallbackManager

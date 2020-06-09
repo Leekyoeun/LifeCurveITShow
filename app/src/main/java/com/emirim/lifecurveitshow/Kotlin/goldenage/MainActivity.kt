@@ -15,10 +15,11 @@ import com.emirim.lifecurveitshow.R
 import com.github.mikephil.charting.components.XAxis
 import com.github.mikephil.charting.data.LineData
 import com.github.mikephil.charting.data.LineDataSet
+import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.chart_activity_main.*
 
 
-class ChartMainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity() {
 
     var controller : LifeEventController? = null
     var backPressedTime : Long = 0
@@ -26,7 +27,7 @@ class ChartMainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.chart_activity_main)
+        setContentView(R.layout.activity_main)
 
         var sharedPerferences = PreferenceManager.getDefaultSharedPreferences(this)
 

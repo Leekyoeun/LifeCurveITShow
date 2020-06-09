@@ -7,9 +7,7 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.emirim.lifecurveitshow.R
 import kotlinx.android.synthetic.main.activity_choose_grapics.*
-import org.goldenage.com.goldenage.ChartMainActivity
-import java.util.*
-
+import org.goldenage.com.goldenage.MainActivity
 
 class ChooseGrapicsActivity : AppCompatActivity() {
 
@@ -19,11 +17,13 @@ class ChooseGrapicsActivity : AppCompatActivity() {
 
         //카테고리 선택을 눌렀을 때
         choosecategoryButton. setOnClickListener{
-            startActivity(Intent(this, ChooseCategory::class.java))
+            val nextIntent=Intent(this,ChooseCategory::class.java)
+            startActivity(nextIntent)
         }
         //직접 그리는 것을 선택했을 때
         chooseUserGrapics.setOnClickListener {
-            startActivity(Intent(this, ChartMainActivity::class.java))
+            val nextIntent=Intent(this, MainActivity::class.java)
+            startActivity(nextIntent)
         }
     }
 }
